@@ -1,1 +1,178 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 张明轩</title>
+    <style>
+        body {
+            font-family: '宋体', SimSun, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff; /* 蓝色背景 */
+            color: #fff; /* 白色文字 */
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.8); /* 白色半透明 */
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #333; /* 导航文字颜色 */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em; /* 名字标题缩小一号 */
+            margin: 0;
+        }
+        h2 {
+            font-size: 1.5em; /* 所有标题缩小一号 */
+            color: #333;
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .section p {
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>张明轩</h1> <!-- 名字居中 -->
+    </header>
+    <nav>
+        <a href="#about">关于</a>
+        <a href="#education">教育背景</a>
+        <a href="#research">科研经历</a>
+        <a href="#projects">项目经历</a>
+        <a href="#skills">技能与证书</a>
+        <a href="#awards">获奖情况</a>
+        <a href="#activities">校园活动</a>
+        <a href="#evaluation">自我评价</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>关于</h2>
+            <p><strong>姓名</strong>: 张明轩</p>
+            <p><strong>性别</strong>: 男</p>
+            <p><strong>出生年月</strong>: 1998年5月</p>
+            <p><strong>联系电话</strong>: +86 138-1234-5678</p>
+            <p><strong>电子邮箱</strong>: zhangmingxuan@university.edu</p>
+            <p><strong>地址</strong>: 北京市海淀区XX路XX号</p>
+        </section>
+        <section id="education" class="section">
+            <h2>教育背景</h2>
+            <p><strong>2023.09 - 至今</strong></p>
+            <p><strong>XX大学</strong> | 人工智能与大数据分析专业 | 硕士研究生</p>
+            <ul>
+                <li>GPA：3.8/4.0（专业前10%）</li>
+                <li>主修课程：机器学习、自然语言处理、数据挖掘、分布式计算</li>
+                <li>研究方向：深度学习在图像识别中的优化算法</li>
+            </ul>
+            <p><strong>2019.09 - 2023.06</strong></p>
+            <p><strong>XX大学</strong> | 计算机科学与技术专业 | 本科</p>
+            <ul>
+                <li>GPA：3.6/4.0 | 校级一等奖学金（2022）</li>
+                <li>毕业论文：《基于卷积神经网络的医学图像分类研究》（评分：A）</li>
+            </ul>
+        </section>
+        <section id="research" class="section">
+            <h2>科研经历</h2>
+            <p><strong>2024.03 - 至今</strong></p>
+            <p><strong>国家级科研项目《智能医疗影像诊断系统开发》</strong> | 核心成员</p>
+            <ul>
+                <li>负责搭建基于PyTorch的轻量化图像分割模型，训练效率提升20%</li>
+                <li>撰写2篇论文（1篇EI收录，1篇在审）</li>
+            </ul>
+            <p><strong>2023.12 - 2024.02</strong></p>
+            <p><strong>实验室课题《多模态数据融合的情感分析模型》</strong> | 独立研究</p>
+            <ul>
+                <li>提出结合文本与语音特征的混合模型，准确率达89.5%（对比基线+7.2%）</li>
+                <li>成果发表于国际会议ICMLA 2024</li>
+            </ul>
+        </section>
+        <section id="projects" class="section">
+            <h2>项目经历</h2>
+            <p><strong>2024.01 - 2024.04</strong></p>
+            <p><strong>企业合作项目：电商用户行为预测系统</strong></p>
+            <ul>
+                <li>使用Spark处理TB级用户日志数据，构建XGBoost购买预测模型（AUC 0.92）</li>
+                <li>输出分析报告获合作方“创新解决方案奖”</li>
+            </ul>
+            <p><strong>2022.06 - 2022.09</strong></p>
+            <p><strong>大学生创新创业项目《校园垃圾分类智能助手》</strong> | 负责人</p>
+            <ul>
+                <li>带领5人团队开发微信小程序，集成图像识别与数据分析模块</li>
+                <li>获省级“互联网+”大赛银奖</li>
+            </ul>
+        </section>
+        <section id="skills" class="section">
+            <h2>技能与证书</h2>
+            <ul>
+                <li><strong>编程语言</strong>: Python（精通）、SQL（熟练）、Java（基础）</li>
+                <li><strong>工具框架</strong>: TensorFlow、PyTorch、Hadoop、Tableau</li>
+                <li><strong>语言能力</strong>: CET-6（628分）、雅思7.5</li>
+                <li><strong>证书</strong>: AWS机器学习专项认证、全国计算机等级考试四级</li>
+            </ul>
+        </section>
+        <section id="awards" class="section">
+            <h2>获奖情况</h2>
+            <ul>
+                <li>2023年 全国研究生数学建模竞赛一等奖</li>
+                <li>2022年 校级“优秀毕业生”</li>
+                <li>2021年 美国大学生数学建模竞赛（MCM）Honorable Mention</li>
+            </ul>
+        </section>
+        <section id="activities" class="section">
+            <h2>校园活动</h2>
+            <ul>
+                <li>研究生院学生会学术部部长（2023-2024）：组织12场技术讲座与学术沙龙</li>
+                <li>校AI社团创始人：带领社团成员完成3个开源项目，GitHub累计Star 200+</li>
+            </ul>
+        </section>
+        <section id="evaluation" class="section">
+            <h2>自我评价</h2>
+            <ul>
+                <li>具备扎实的算法功底与工程化能力，熟悉完整AI项目开发流程</li>
+                <li>对科研充满热情，擅长跨领域协作，累计团队管理经验超200小时</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 张明轩. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
